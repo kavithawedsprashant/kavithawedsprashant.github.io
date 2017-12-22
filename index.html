@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<title>prashantwedskavitha</title>
+<link rel="icon" type="image/png" href="logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="css/style.css"/>
+<script src="javascript/script.js"></script>
+<style>
+.bgimg, .bgimg2, .bgimg3 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.bgimg {background-image: url("wedding2.jpg")}
+.bgimg2 {background-image: url("savethedate1.jpg")}
+.bgimg3 {background-image: url("background1.jpg")}
+</style>
+<body onpageshow="initializeClock('clockdiv', 'March 08 2018 08:30:00 GMT+0530');">
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center text-big bold center">
+    <h1 class="w3-jumbo">Prashant & Kavitha</h1>
+    <h2><b>will be married in</b></h2>
+  <div id="clockdiv">
+<div>
+<span class="days"></span>
+<div class="smalltext">Days</div>
+</div>
+<div>
+<span class="hours"></span>
+<div class="smalltext">Hours</div>
+</div>
+<div>
+<span class="minutes"></span>
+<div class="smalltext">Minutes</div>
+</div>
+<div>
+<span class="seconds"></span>
+<div class="smalltext">Seconds</div>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Prashant & Kavitha</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Wedding</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>Prashant & Kavitha</b></h1>
+    <div class="w3-card w3-col" style="width:50%;margin:20px 0">
+  <img src="bhaiya.jpg" alt="Person" style="width:80%;margin:50px 10%">
+  <div class="w3-container">
+    <h4><b>The Groom</b></h4>
+    <p>Senior Software Developer at NextGen HealthCare</p>
+  </div>
+</div>
+<div class="w3-card w3-col" style="width:50%;margin:20px 0">
+<img src="bhabhi.jpg" alt="Person" style="width:80%;margin:50px 10%">
+<div class="w3-container">
+<h4><b>The Bride</b></h4>
+<p>Software Engineer at EClinical Works</p>
+</div>
+</div>
+    <img class="w3-round w3-grayscale-min" src="" style="width:100%;margin:30px">
+    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <header class="w3-center w3-black w3-padding-16">
+    <p>We coordinaly invite you to our wedding.</p>
+  </header>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container bgimg3 w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content w3-pale-red">
+    <h1 class="w3-text-grey text-big bold"><b>WEDDING CEREMONIES</b></h1>
+    <hr/>
+    <div class="w3-card">
+      <h3 class="w3-text-grey text-big"><b>Haldi</b></h3>
+    <img class="w3-round-large" src="haldi.jpg" style="width:80%;margin:10px">
+    <div class="w3-row text-mid">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>4th March, 2018</p>
+        <p>9AM Onwards</p>
+        <div class="w3-center">
+        </div>
+      </div>
+      <div class="w3-half">
+        <h2>Where</h2>
+        <p>B-14/3, Navjeevan Complex,</p>
+        <p>Baridih, Jamshedpur.</p>
+      </div>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAqjNKBUuCXwg0ganx6sQ_zu4UFn8E8B0g'></script>
+<div style='overflow:hidden;height:320px;width:60%;margin:20px 20%'>
+    <div id='gmap_canvas' style='height:320px;'></div>
+    <style>
+        #gmap_canvas img {
+            max-width: none!important;
+            background: none!important
+        }
+    </style>
+</div> <a href='https://add-map.com/'></a>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=2d3df309a2eccb7bddf5e484fb3758a1b4c0d8a1'></script>
+<script type='text/javascript'>
+    function init_map() {
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(22.797146481762873, 86.2548717767212),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(22.797146481762873, 86.2548717767212)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: '<strong>Home</strong><br>B-14/3, Navjeevan Complex, Baridih.<br>831017 Jamshedpur<br>'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+    </div>
+  </div>
+  <hr/>
+  <div class="w3-card">
+    <h3 class="w3-text-grey text-big"><b>Durga Bhajan</b></h3>
+  <img class="w3-round-large" src="durga.jpg" style="width:80%;margin:10px">
+  <div class="w3-row text-mid">
+    <div class="w3-half">
+      <h2>When</h2>
+      <p>4th March, 2018</p>
+      <p>5PM Onwards</p>
+      <div class="w3-center">
+      </div>
+    </div>
+    <div class="w3-half">
+      <h2>Where</h2>
+      <p>Timplate Kali Mandir</p>
+      <p>Timpla, Jamshedpur.</p>
+    </div>
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA8vk4NJLThvrB_CTezR3plrs7uhGfB8G0'></script>
+  <div style='overflow:hidden;height:320px;width:60%;margin:20px 20%;'>
+      <div id='gmap_canvas1' style='height:320px;'></div>
+      <style>
+          #gmap_canvas1 img {
+              max-width: none!important;
+              background: none!important
+          }
+      </style>
+  </div>
+  <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=8baa0d0917b7ed1a351e8392893c8e30196938fe'></script>
+  <script type='text/javascript'>
+      function init_map() {
+          var myOptions = {
+              zoom: 12,
+              center: new google.maps.LatLng(22.7888959, 86.22725889999992),
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          map = new google.maps.Map(document.getElementById('gmap_canvas1'), myOptions);
+          marker = new google.maps.Marker({
+              map: map,
+              position: new google.maps.LatLng(22.7888959, 86.22725889999992)
+          });
+          infowindow = new google.maps.InfoWindow({
+              content: '<strong>Timplate Kali Mandir</strong><br>Timplate kali mandir,Timplate<br> Jamshedpur<br>'
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+              infowindow.open(map, marker);
+          });
+          infowindow.open(map, marker);
+      }
+      google.maps.event.addDomListener(window, 'load', init_map);
+  </script>
+  </div>
+</div>
+<hr/>
+<div class="w3-card"  onmouseover="initializeClock('clockdiv2', 'March 07 2018 16:00:00 GMT+0530');">
+  <h3 class="w3-text-grey text-big"><b>Pradhanam</b></h3>
+<img class="w3-round-large" src="pradhanam.jpg" style="width:80%;margin:10px">
+<div class="w3-row text-mid">
+  <div class="w3-half">
+    <h2>When</h2>
+    <p>7th March, 2018</p>
+    <p>4PM Onwards</p>
+    <div class="w3-center">
+    </div>
+  </div>
+  <div class="w3-half">
+    <h2>Where</h2>
+    <p>Sri Annapoorneshwari Kalyana Mantapa</p>
+    <p>Amruth Nagar Main Rd, Beereshwar Nagar, Anjanadri Layout, Konanakunte,
+Bengaluru</p>
+</div>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA8vk4NJLThvrB_CTezR3plrs7uhGfB8G0'></script>
+<div style='overflow:hidden;height:320px;width:60%;margin:20px 20%;'>
+    <div id='gmap_canvas2' style='height:320px;'></div>
+    <style>
+        #gmap_canvas2 img {
+            max-width: none!important;
+            background: none!important
+        }
+    </style>
+</div>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f3980fc485fcadf1d2a17762dcf04f0c4863d0ad'></script>
+<script type='text/javascript'>
+    function init_map() {
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(12.882536, 77.56605339999999),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas2'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(12.882536, 77.56605339999999)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: '<strong>Sri Annapoorneshwari Kalyana Mantapa</strong><br>Amruth Nagar Main Rd, Beereshwar Nagar, Anjanadri Layout, Konanakunte,<br> Bengaluru<br>'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+</div>
+</div>
+<hr/>
+<div class="w3-card">
+  <h3 class="w3-text-grey text-big"><b>Lagnam</b></h3>
+<img class="w3-round-large" src="lagnam.jpg" style="width:80%;margin:10px">
+<div class="w3-row text-mid">
+  <div class="w3-half">
+    <h2>When</h2>
+    <p>8th March, 2018</p>
+    <p>8:30AM Onwards</p>
+    <div class="w3-center">
+    </div>
+  </div>
+  <div class="w3-half">
+    <h2>Where</h2>
+    <p>Sri Annapoorneshwari Kalyana Mantapa</p>
+    <p>Amruth Nagar Main Rd, Beereshwar Nagar, Anjanadri Layout, Konanakunte,
+Bengaluru</p>
+</div>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA8vk4NJLThvrB_CTezR3plrs7uhGfB8G0'></script>
+<div style='overflow:hidden;height:320px;width:60%;margin:20px 20%;'>
+    <div id='gmap_canvas3' style='height:320px;'></div>
+    <style>
+        #gmap_canvas3 img {
+            max-width: none!important;
+            background: none!important
+        }
+    </style>
+</div>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f3980fc485fcadf1d2a17762dcf04f0c4863d0ad'></script>
+<script type='text/javascript'>
+    function init_map() {
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(12.882536, 77.56605339999999),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas3'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(12.882536, 77.56605339999999)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: '<strong>Sri Annapoorneshwari Kalyana Mantapa</strong><br>Amruth Nagar Main Rd, Beereshwar Nagar, Anjanadri Layout, Konanakunte,<br> Bengaluru<br>'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+</div>
+</div>
+<hr/>
+<div class="w3-card">
+  <h3 class="w3-text-grey text-big"><b>Reception</b></h3>
+<img class="w3-round-large" src="reception.jpg" style="width:80%;margin:10px">
+<div class="w3-row text-mid">
+  <div class="w3-half">
+    <h2>When</h2>
+    <p>14th March, 2018</p>
+    <p>8PM Onwards</p>
+    <div class="w3-center">
+    </div>
+  </div>
+  <div class="w3-half">
+    <h2>Where</h2>
+    <p>Kannelite Hotel</p>
+    <p>Besides Sakchi Police Station, Sakchi, Jamshedpur.</p>
+  </div>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA8vk4NJLThvrB_CTezR3plrs7uhGfB8G0'></script>
+<div style='overflow:hidden;height:320px;width:60%;margin:20px 20%;'>
+    <div id='gmap_canvas4' style='height:320px;'></div>
+    <style>
+        #gmap_canvas4 img {
+            max-width: none!important;
+            background: none!important
+        }
+    </style>
+</div>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=7e62cb1f79f17fc10fd0518e84c7c6dc0d73deae'></script>
+<script type='text/javascript'>
+    function init_map() {
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(22.8029157, 86.20057500000007),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas4'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(22.8029157, 86.20057500000007)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: '<strong>Hotel Kannelite</strong><br>hotel Kannelite, Sakchi<br> Jamshedpur<br>'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+</div>
+</div>
+
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <h1>HOPE YOU CAN MAKE IT!</h1>
+  <p class="w3-large">Kindly Respond By January, 2018</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form action="mailto:manishraju1996@gmail.com" method="post" enctype="text/plain">
+        <input id="name" class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+        <input class="w3-input w3-border" type="text" placeholder="email-id" name="email">
+      <p><i>Sincerely, Prashant & Kavitha</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <input type="submit" value="Going" onclick="going();" class="w3-button w3-block w3-green"/>
+        </div>
+        <div class="w3-half">
+          <button onclick="notgoing();" type="button" class="w3-button w3-block w3-red">Can't come</button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 id="head1"class="w3-wide"></h1>
+      <p>Hope to see you soon.</p>
+      <br/>
+          <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-block w3-green">BACK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h2 id="head2" class="w3-wide"></h2>
+      <p>Ur blessings and wishes matter the most to us.</p>
+      <br/>
+          <button onclick="document.getElementById('id03').style.display='none'" type="button" class="w3-button w3-block w3-red">BACK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Shaadi me zoroor aana.! :D</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
