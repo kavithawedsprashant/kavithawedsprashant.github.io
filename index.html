@@ -14,7 +14,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 .bgimg {background-image: url("wedding2.jpg")}
 .bgimg2 {background-image: url("savethedate1.jpg")}
@@ -28,20 +28,18 @@
 <body onpageshow="initializeClock('clockdiv', 'March 08 2018 08:30:00 GMT+0530');">
 
 <!-- Header / Home-->
-<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+<div class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-center text-big bold center">
-    <br/>
-    <p></p>
     <h1 class="w3-jumbo">Prashant & Kavitha</h1>
     <h2><b>will be married in</b></h2>
   <div id="clockdiv">
 <div>
 <span class="days"></span>
-<div class="smalltext">Days</div>
+<div class="smalltext">  Days </div>
 </div>
 <div>
 <span class="hours"></span>
-<div class="smalltext">Hours</div>
+<div class="smalltext"> Hours </div>
 </div>
 <div>
 <span class="minutes"></span>
@@ -53,8 +51,9 @@
 </div>
 </div>
 </div>
+<p></p>
 <br/>
-</header>
+</div>
 
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
@@ -65,8 +64,6 @@
     <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
   </div>
 </div>
-<br/>
-<!-- About / Jane And John -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>Prashant & Kavitha</b></h1>
@@ -383,7 +380,7 @@ Bengaluru</p>
     <div class="w3-container w3-white w3-center">
       <h1 class="w3-wide">CAN YOU COME?</h1>
       <p>We really hope you can make it.</p>
-      <form action="mailto:manishraju1996@gmail.com" method="post" enctype="text/plain">
+      <form action="">
         <input id="name" class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
         <input class="w3-input w3-border" type="text" placeholder="email-id" name="email">
       <p><i>Sincerely, Prashant & Kavitha</i></p>

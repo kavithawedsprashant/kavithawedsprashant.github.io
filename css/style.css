@@ -32,12 +32,14 @@ p {line-height: 2}
     font-style: italic;
 }
 #clockdiv{
-  margin: 20px;
+  width:auto;
+  height: auto;
+  margin: auto;
 	font-family: sans-serif;
 	color: #fff;
-	display: inline-block;
+	display: inline-flex;
 	font-weight: 100;
-	text-align: center;
+	text-align: justify;
 	font-size: 30px;
 }
 
