@@ -41,6 +41,7 @@ function going(){
   document.getElementById('id01').style.display='none';
   document.getElementById('id02').style.display='block';
   document.getElementById('head1').innerHTML="!!Awesome " + document.getElementById('name').value+ "!!";
+
 }
 function notgoing(){
   document.getElementById('id01').style.display='none';
