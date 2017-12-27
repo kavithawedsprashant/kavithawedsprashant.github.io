@@ -21,11 +21,18 @@
 .bgimg {background-image: url("wedding2.jpg")}
 .bgimg2 {background-image: url("savethedate1.jpg")}
 .bgimg3 {background-image: url("background1.jpg")}
-@media only screen and (max-device-width: 100px) {
+
+#nav1, #nav2, #nav3, #nav4{
+  width: 25%;
+}
+
+@media screen and (max-width: 600px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
 }
+
+
 </style>
 <body onpageshow="initializeClock('clockdiv', 'March 08 2018 08:30:00 GMT+0530');">
 
@@ -58,14 +65,12 @@
 </div>
 
 <!-- Navbar (sticky bottom) -->
-<div class="w3-top w3-hide-small w3-theme-l3">
-  <div class="w3-bar w3-theme-l3 w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button w3-hover-purple">Home</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button w3-hover-purple">Prashant & Kavitha</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button w3-hover-purple">Wedding</a>
-    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-purple">RSVP</a>
+  <div class="w3-top w3-hide-small w3-theme-l3 w3-bar w3-center w3-padding">
+    <a href="#home" class="w3-bar-item w3-button w3-hover-purple" id="nav1">Home</a>
+    <a href="#us" class="w3-bar-item w3-button w3-hover-purple" id="nav2">Prashant & Kavitha</a>
+    <a href="#wedding" class="w3-bar-item w3-button w3-hover-purple" id="nav3">Wedding</a>
+    <a href="#rsvp" class="w3-bar-item w3-button w3-hover-purple" id="nav4">RSVP</a>
   </div>
-</div>
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>Prashant & Kavitha</b></h1>
