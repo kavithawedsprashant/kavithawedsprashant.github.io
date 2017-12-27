@@ -45,7 +45,7 @@ p {line-height: 2}
 
 #clockdiv > div{
 	padding: 10px;
-	border-radius: 3px;
+	border-radius: 10px;
 	display: inline-block;
   background: #fcecfc; /* Old browsers */
 background: -moz-linear-gradient(top, #fcecfc 8%, #ff7cd8 72%); /* FF3.6-15 */
@@ -56,7 +56,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', end
 
 #clockdiv div > span{
 	padding: 15px;
-	border-radius: 3px;
+	border-radius: 10px;
 	display: inline-block;
   background: #cb60b3; /* Old browsers */
 background: -moz-linear-gradient(top, #cb60b3 0%, #c146a1 22%, #a80077 63%, #db36a4 100%); /* FF3.6-15 */
