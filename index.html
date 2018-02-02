@@ -33,7 +33,7 @@
 }
 
 </style>
-<body style="background-color: #8e093f;" onpageshow="initializeClock('clockdiv', 'March 08 2018 08:30:00 GMT+0530');">
+<body style="background-color: #8e093f;" onpageshow="initializeClock('clockdiv', 'March 08 2018 08:30:00 GMT+0530'); currentDiv(1);">
 
 <div class="w3-display-container bgimg w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-center text-big bold center">
@@ -60,7 +60,7 @@
 </div>
 </div>
 <!-- Navbar (sticky bottom) -->
-  <div class="w3-top w3-hide-small w3-theme-l3 w3-bar w3-center w3-padding w3-opacity-min w3-hover-opacity-mid">
+    <div class="w3-top w3-hide-small w3-theme-l3 w3-bar w3-center w3-padding w3-opacity-min w3-hover-opacity-mid">
     <a href="#home" class="w3-bar-item w3-button w3-hover-pale-red" id="nav1">Home</a>
     <a href="#us" class="w3-bar-item w3-button w3-hover-pale-red" id="nav2">Prashant & Kavitha</a>
     <a href="#wedding" class="w3-bar-item w3-button w3-hover-pale-red" id="nav3">Wedding</a>
@@ -68,35 +68,47 @@
   </div>
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
   <div class="w3-content">
-    <h1 class="w3-center w3-text-grey"><b>Prashant & Kavitha</b></h1>
+    <h1 class="w3-center" style="color:#ff0051;"><b>Prashant & Kavitha</b></h1>
     <div class="w3-card w3-col" style="width:50%;margin:20px 0">
   <img src="bhaiya.jpg" alt="Person" style="width:80%;margin:50px 10%">
-  <div class="w3-container">
+  <div class="w3-container" style="color:#ff0051;">
     <h4><b>The Groom</b></h4>
     <p>Senior Software Developer at NextGen HealthCare</p>
   </div>
 </div>
 <div class="w3-card w3-col" style="width:50%;margin:20px 0">
 <img src="bhabhi.jpg" alt="Person" style="width:80%;margin:50px 10%">
-<div class="w3-container">
+<div class="w3-container" style="color:#ff0051;">
 <h4><b>The Bride</b></h4>
 <p>Software Engineer at EClinical Works</p>
 </div>
 </div>
-    <img class="w3-round w3-grayscale-min" src="" style="width:100%;margin:30px">
-    <p><i>You all know us. And we all know you. We are getting married</i>
-    </p><br>
-    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+<!--Slideshow-->
+<div class="w3-content w3-display-container">
+  <hr/>
+  <h1 class="w3-center" style="color:#ff0051;">Gallary</h1>
+  <img class="mySlides" src="couple1.jpg" style="width:100%">
+  <img class="mySlides" src="couple2.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
   </div>
 </div>
 
+
+    <h2 class="w3-center" style="color:#ff0051;"><i>In the central place of the heart of every parent there is a warm wish that their child leads a life with all sorts of happiness.
+      One such occassion has arrived.</i></h2><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-round w3-padding-large w3-large" style="background-color:#ff0051;">Wedding Details</a></p>
+  </div>
+</div>
 <!-- Background photo -->
 <div class="w3-display-container bgimg2">
-  <header class="w3-center w3-black w3-padding-16">
+  <header class="w3-center w3-padding-16" style="background-color:#8e093f; opacity:20%">
     <p>We coordinaly invite you to our wedding.</p>
   </header>
 </div>
-
 <!-- Wedding information -->
 <div class="w3-container bgimg3 w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content w3-pale-red">
@@ -127,7 +139,7 @@
             background: none!important
         }
     </style>
-</div> <a href='https://add-map.com/'>make maps for your website</a>
+</div> <a href='https://add-map.com/' style="opacity:0;">make maps for your website</a>
 <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=2d3df309a2eccb7bddf5e484fb3758a1b4c0d8a1'></script>
 <script type='text/javascript'>
     function init_map() {
