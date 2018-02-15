@@ -219,7 +219,7 @@
   </div>
 </div>
 <hr/>
-<div class="w3-card"  onmouseover="initializeClock('clockdiv2', 'March 07 2018 16:00:00 GMT+0530');">
+<div class="w3-card">
   <h3 class="w3-text-grey text-big"><b>Pradhanam</b></h3>
 <img class="w3-round-large" src="pradhanam.jpg" style="width:80%;margin:10px">
 <div class="w3-row text-mid">
@@ -272,6 +272,61 @@ Bengaluru</p>
 </div>
 </div>
 <hr/>
+      
+<div class="w3-card">
+  <h3 class="w3-text-grey text-big"><b>Pre-Wed Reception</b></h3>
+<img class="w3-round-large" src="pradhanam.jpg" style="width:80%;margin:10px">
+<div class="w3-row text-mid">
+  <div class="w3-half">
+    <h2>When</h2>
+    <p>7th March, 2018</p>
+    <p>8PM Onwards</p>
+    <div class="w3-center">
+    </div>
+  </div>
+  <div class="w3-half">
+    <h2>Where</h2>
+    <p>Sri Annapoorneshwari Kalyana Mantapa</p>
+    <p>Amruth Nagar Main Rd, Beereshwar Nagar, Anjanadri Layout, Konanakunte,
+Bengaluru</p>
+</div>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA8vk4NJLThvrB_CTezR3plrs7uhGfB8G0'></script>
+<div style='overflow:hidden;height:320px;width:80%;margin:20px 10%;'>
+    <div id='gmap_canvas2' style='height:320px;'></div>
+    <style>
+        #gmap_canvas2 img {
+            max-width: none!important;
+            background: none!important
+        }
+    </style>
+</div>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f3980fc485fcadf1d2a17762dcf04f0c4863d0ad'></script>
+<script type='text/javascript'>
+    function init_map() {
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(12.882536, 77.56605339999999),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas2'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(12.882536, 77.56605339999999)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: '<strong>Sri Annapoorneshwari Kalyana Mantapa</strong><br>Amruth Nagar Main Rd, Beereshwar Nagar, Anjanadri Layout, Konanakunte,<br> Bengaluru<br>'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+</div>
+</div>
+<hr/>
+      
 <div class="w3-card">
   <h3 class="w3-text-grey text-big"><b>Lagnam</b></h3>
 <img class="w3-round-large" src="lagnam.jpg" style="width:80%;margin:10px">
